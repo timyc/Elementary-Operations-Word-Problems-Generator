@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Math Word Problem Generator</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-primary">
+			<div class = "container">
+  				<a class="navbar-brand" href="#">
+    				Elementary Operations Word Problems
+  				</a>
+  				<span class="navbar-text text-light mr-sm-2">
+    				Score: <a href="#" id="corrects">0</a>/<a href="#" id="totals">0</a>
+  				</span>
+  			</div>
+		</nav>
+		<div class="container">
+			<br />
+			<center><button id="generate" type="button" class="btn btn-outline-primary">Generate New Question</button></center>
+			<br />
+			<div class="alert alert-success" id="correctAnswer" style="display:none;">
+  				<center><h1>Correct!</h1></center>
+			</div>
+			<div class="alert alert-danger" id="incorrectAnswer" style="display:none;">
+  				<center><h1>Incorrect!</h1></center>
+			</div>
+			<br />
+			<div class="card" id="qBody" style="display:none;">
+  				<div class="card-body">
+    				<div id="question"></div>
+  				</div>
+			</div>
+			<br />
+			<div class="row" id="aBody" style="display:none;">
+				<div class="col-sm"></div>
+				<div class="col-sm">
+					<div class="input-group mb-3">
+						<form id="yourAnswer">
+  							<input type="text" class="form-control" placeholder="Your Answer" aria-label="Your Answer" aria-describedby="button-addon2" id="iAnswer" autocomplete="off">
+  						</form>
+  						<div class="input-group-append">
+    						<button class="btn btn-outline-secondary" type="submit" id="button-addon2" onclick="checkAnswer()">Submit</button>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm"></div>
+			</div>
+			<div id="identifier" style="display:none;"></div>
+		</div>
+		<footer class="container">
+			<hr>
+        	<center><span class="text-muted">View on <a href= "https://github.com/timyc/Elementary-Operations-Word-Problems-Generator">GitHub</a></span></center>
+    	</footer>
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
